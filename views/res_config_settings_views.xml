@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_whatsapp" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.taqnix.whatsapp</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <block id="website_info_settings" position="after">
+                <block title="Floating Chat Button Settings" id="div_whatsapp_chat">
+                    <setting id="taqnix_whatsapp_active_setting" string="Activate Chat Button"
+                             help="Enable website chat button on website.">
+                        <field name="taqnix_whatsapp_active"/>
+                    </setting>
+                    <setting></setting>
+                    <setting id="taqnix_whatsapp_button_icon" string="Button Icon"
+                             help="Choose the Font Awesome icon class to display for the button.">
+                        <field name="taqnix_whatsapp_button_icon"/>
+                        <br/>
+                        <span class="help">
+                            Font Awesome icon class examples:
+                            <br/>
+                            • <strong>WhatsApp:</strong>
+                            <code>fa-whatsapp</code>
+                            <br/>
+                            • <strong>Email:</strong>
+                            <code>fa-envelope</code>
+                            <br/>
+                            • <strong>SMS:</strong>
+                            <code>fa-comment</code>
+                            <br/>
+                            • <strong>Instagram:</strong>
+                            <code>fa-instagram</code>
+                            <br/>
+                            • <strong>Facebook Messenger:</strong>
+                            <code>fab fa-facebook</code>
+                            <br/>
+                            • <strong>Facebook Page:</strong>
+                            <code>fa-facebook</code>
+                            <br/>
+                            • <strong>Telegram:</strong>
+                            <code>fa-telegram</code>
+                            <br/>
+                            • <strong>Twitter:</strong>
+                            <code>fa-twitter</code>
+                            <br/>
+                            • <strong>Snapchat:</strong>
+                            <code>fa-snapchat-ghost</code>
+                            <br/>
+                            • <strong>Phone Call:</strong>
+                            <code>fa-phone</code>
+                            <br/>
+                        </span>
+                    </setting>
+                    <setting id="taqnix_whatsapp_link_setting" string="Contact Link">
+                        <field name="taqnix_whatsapp_link"/>
+                        <br/>
+                        <span class="help">
+                            Enter a contact link depending on the platform. Examples:
+                            <br/>
+                            • <strong>WhatsApp:</strong>
+                            <code>https://wa.me/+918867328882</code>
+                            <br/>
+                            • <strong>Email:</strong>
+                            <code>mailto:john.doe@example.com</code>
+                            <br/>
+                            • <strong>SMS:</strong>
+                            <code>sms:+918867328882</code>
+                            <br/>
+                            • <strong>Instagram:</strong>
+                            <code>https://www.instagram.com/johndoe/</code>
+                            <br/>
+                            • <strong>Facebook Messenger:</strong>
+                            <code>https://m.me/yourpageusername</code>
+                            <br/>
+                            • <strong>Facebook Page:</strong>
+                            <code>https://www.facebook.com/yourpageusername</code>
+                            <br/>
+                            • <strong>Telegram:</strong>
+                            <code>https://t.me/yourusername</code>
+                            <br/>
+                            • <strong>Twitter:</strong>
+                            <code>https://twitter.com/yourusername</code>
+                            <br/>
+                            • <strong>Snapchat:</strong>
+                            <code>https://www.snapchat.com/add/yourusername</code>
+                            <br/>
+                            • <strong>Phone Call:</strong>
+                            <code>tel:+918867328882</code>
+                            <br/>
+                        </span>
+                    </setting>
+                    <setting id="taqnix_whatsapp_default_message_setting" string="Default Message"
+                             help="Default message when user clicks the button">
+                        <field name="taqnix_whatsapp_default_message"/>
+                    </setting>
+                    <setting id="taqnix_whatsapp_button_position_setting" string="Button Position"
+                             help="Button position on the screen">
+                        <field name="taqnix_whatsapp_button_position"/>
+                    </setting>
+                    <setting id="taqnix_whatsapp_button_text_setting" string="Button Text"
+                             help="Text displayed on the button">
+                        <field name="taqnix_whatsapp_button_text"/>
+                    </setting>
+                    <setting id="taqnix_whatsapp_button_color_setting" string="Button Background Color"
+                             help="Button background color (hex code, e.g., '#25D366', '#128c7e')">
+                        <field name="taqnix_whatsapp_button_color"/>
+                    </setting>
+                    <setting id="taqnix_whatsapp_text_color_setting" string="Button Text Color"
+                             help="Button text color (hex code, e.g., '#FFFFFF', '#000000')">
+                        <field name="taqnix_whatsapp_text_color"/>
+                    </setting>
+                    <setting id="taqnix_whatsapp_icon_color_setting" string="Button Icon Color"
+                             help="Button icon color (hex code, e.g., '#FFFFFF', '#000000')">
+                        <field name="taqnix_whatsapp_icon_color"/>
+                    </setting>
+                    <setting id="taqnix_whatsapp_show_on_mobile_setting" string="Show on Mobile"
+                             help="Show button on mobile devices">
+                        <field name="taqnix_whatsapp_show_on_mobile"/>
+                    </setting>
+                    <setting id="taqnix_whatsapp_show_on_desktop_setting" string="Show on Desktop"
+                             help="Show button on desktop devices">
+                        <field name="taqnix_whatsapp_show_on_desktop"/>
+                    </setting>
+                </block>
+            </block>
+        </field>
+    </record>
+</odoo>
