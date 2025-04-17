@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_whatsapp" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.taqnix.whatsapp</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='website_info_settings']" position="after">
+                <div class="col-xs-12 row o_settings_container" id="div_whatsapp_chat">
+                    <h2>Floating Chat Button Settings</h2>
+                    <div class="col-xs-12 col-md-6 o_setting_box">
+                        <div class="o_setting_right_pane border-start-0">
+                            <div class="content-group">
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_active">Activate</label>
+                                    <field name="taqnix_whatsapp_active"
+                                           help="Enable WhatsApp chat button on the website."/>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_button_icon">Button Icon</label>
+                                    <field name="taqnix_whatsapp_button_icon"/>
+                                    <span class="help">
+                                        Font Awesome icon class examples:
+                                        <br/>
+                                        •
+                                        <strong>WhatsApp:</strong>
+                                        <code>fa-whatsapp</code>
+                                        <br/>
+                                        •
+                                        <strong>Email:</strong>
+                                        <code>fa-envelope</code>
+                                        <br/>
+                                        •
+                                        <strong>SMS:</strong>
+                                        <code>fa-comment</code>
+                                        <br/>
+                                        •
+                                        <strong>Instagram:</strong>
+                                        <code>fa-instagram</code>
+                                        <br/>
+                                        •
+                                        <strong>Facebook Messenger:</strong>
+                                        <code>fab fa-facebook</code>
+                                        <br/>
+                                        •
+                                        <strong>Facebook Page:</strong>
+                                        <code>fa-facebook</code>
+                                        <br/>
+                                        •
+                                        <strong>Telegram:</strong>
+                                        <code>fa-telegram</code>
+                                        <br/>
+                                        •
+                                        <strong>Twitter:</strong>
+                                        <code>fa-twitter</code>
+                                        <br/>
+                                        •
+                                        <strong>Snapchat:</strong>
+                                        <code>fa-snapchat-ghost</code>
+                                        <br/>
+                                        •
+                                        <strong>Phone Call:</strong>
+                                        <code>fa-phone</code>
+                                        <br/>
+                                    </span>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_link">Contact Link</label>
+                                    <field name="taqnix_whatsapp_link"/>
+                                    <span class="help">
+                                        Enter a contact link depending on the platform. Examples:
+                                        <br/>
+                                        •
+                                        <strong>WhatsApp:</strong>
+                                        <code>https://wa.me/+918867328882</code>
+                                        <br/>
+                                        •
+                                        <strong>Email:</strong>
+                                        <code>mailto:john.doe@example.com</code>
+                                        <br/>
+                                        •
+                                        <strong>SMS:</strong>
+                                        <code>sms:+918867328882</code>
+                                        <br/>
+                                        •
+                                        <strong>Instagram:</strong>
+                                        <code>https://www.instagram.com/johndoe/</code>
+                                        <br/>
+                                        •
+                                        <strong>Facebook Messenger:</strong>
+                                        <code>https://m.me/yourpageusername</code>
+                                        <br/>
+                                        •
+                                        <strong>Facebook Page:</strong>
+                                        <code>https://www.facebook.com/yourpageusername</code>
+                                        <br/>
+                                        •
+                                        <strong>Telegram:</strong>
+                                        <code>https://t.me/yourusername</code>
+                                        <br/>
+                                        •
+                                        <strong>Twitter:</strong>
+                                        <code>https://twitter.com/yourusername</code>
+                                        <br/>
+                                        •
+                                        <strong>Snapchat:</strong>
+                                        <code>https://www.snapchat.com/add/yourusername</code>
+                                        <br/>
+                                        •
+                                        <strong>Phone Call:</strong>
+                                        <code>tel:+918867328882</code>
+                                        <br/>
+                                    </span>
+
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_default_message">Default Message
+                                    </label>
+                                    <field name="taqnix_whatsapp_default_message"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 o_setting_box">
+                        <div class="o_setting_right_pane border-start-0">
+                            <div class="content-group">
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_button_position">Button Position
+                                    </label>
+                                    <field name="taqnix_whatsapp_button_position"/>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_button_text">Button Text</label>
+                                    <field name="taqnix_whatsapp_button_text"/>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_button_color">Background Color</label>
+                                    <field name="taqnix_whatsapp_button_color"/>
+                                    <span class="help">Hex code (e.g., '#25D366')</span>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_text_color">Text Color</label>
+                                    <field name="taqnix_whatsapp_text_color"/>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_icon_color">Icon Color</label>
+                                    <field name="taqnix_whatsapp_icon_color"/>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_show_on_mobile">Show on Mobile</label>
+                                    <field name="taqnix_whatsapp_show_on_mobile"/>
+                                </div>
+                                <div class="row mt-2">
+                                    <label class="col-lg-3" for="taqnix_whatsapp_show_on_desktop">Show on Desktop
+                                    </label>
+                                    <field name="taqnix_whatsapp_show_on_desktop"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
