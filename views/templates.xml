@@ -1,0 +1,22 @@
+<odoo>
+    <template id="taqnix_whatsapp_button" name="WhatsApp Button Template" inherit_id="website.layout">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <!-- Use request.website to ensure the correct website context -->
+            <t t-if="request.website and request.website.taqnix_whatsapp_active">
+                <div class="taqnix-whatsapp-btn"
+                     t-att-data-position="request.website.taqnix_whatsapp_button_position"
+                     t-att-data-mobile="request.website.taqnix_whatsapp_show_on_mobile"
+                     t-att-data-desktop="request.website.taqnix_whatsapp_show_on_desktop"
+                     t-att-data-phone="request.website.taqnix_whatsapp_link"
+                     t-att-data-message="request.website.taqnix_whatsapp_default_message"
+                     t-att-style="'background-color: ' + (request.website.taqnix_whatsapp_button_color or '#25D366') + '; color: ' + (request.website.taqnix_whatsapp_text_color or '#FFFFFF')">
+                    <a t-attf-href="#{(request.website.taqnix_whatsapp_link or '').replace(' ', '').replace('-', '')}?text=#{request.website.taqnix_whatsapp_default_message or ''}"
+                       class="taqnix-whatsapp-link" target="_blank" rel="noopener noreferrer">
+                        <i t-att-class="'fa ' + (request.website.taqnix_whatsapp_button_icon or 'fa-whatsapp') + ' taqnix-whatsapp-icon'"
+                           t-att-style="'color: ' + (request.website.taqnix_whatsapp_icon_color or '#FFFFFF')"></i>
+                    </a>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>
